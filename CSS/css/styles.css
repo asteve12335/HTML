@@ -1,0 +1,81 @@
+body {
+    margin: 10px;
+}
+
+/*pseudo-class selectors*/
+article :last-child {
+    font-weight: bold;
+}
+
+ul li:nth-child(3n) {
+    color: deeppink;
+}
+
+a:visited,
+a:link {
+    color: dodgerblue;
+}
+
+a:hover,
+a:focus {
+    color: deeppink;
+}
+
+/*Pseudo-elements selectors*/
+p::first-letter {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+::selection {
+    background-color: pink;
+}
+
+p::before {
+    content: "...";
+    display: block;  /* converts element to block element*/
+}
+
+/* Selectors Specificity*/
+h1 {
+    color: dodgerblue;
+}
+
+.highlight {
+    color: deeppink;
+}
+
+#product {
+    color: green;
+}
+
+.highlight#product {
+    color: dodgerblue;
+}
+
+/* Inheritance */
+p {
+    color: dodgerblue;
+    border: 1px solid black;
+}
+
+strong {
+    color: initial;
+}
+
+/* Colors and Gradients and Borders and Shadows*/
+.box {
+    width: 200px;
+    height: 200px;
+    background: dodgerblue;
+    box-shadow: 0 0 30px grey;
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
